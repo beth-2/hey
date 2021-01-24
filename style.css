@@ -1,0 +1,102 @@
+@keyframes animasyon{
+    from{
+        background-image: url("deepblue.jpg");
+        height:1500px;
+        opacity: 0.1;
+    }
+    to{
+        background-image: url("deepblue.jpg");
+        height:1500px;
+    }
+
+}
+body{
+    height:150px;
+    animation-duration: 5s;
+    animation-name: animasyon;
+    animation-fill-mode: forwards;
+    transition-delay: 3s;
+}
+header{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(skyblue 35%,black);
+    font-family: Arial,sans-serif;
+    color:transparent;
+    background-position: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation:infinite 6s ani;
+    white-space: nowrap;
+}
+@keyframes ani{
+    0%{
+        background-size: 0% 100%;
+        background-position: left;
+    }
+    50%{
+        background-size: 100% 100%;
+        background-position: right;
+    }
+    100%{
+        background-size: 0% 100%;
+        background-position: left;
+    }
+}
+   
+main{
+    color: rgb(98,122,119);
+    text-align: center;
+}
+.div1{
+    position: absolute;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    background-image:linear-gradient(to left,rgb(98,122,119) 35%,black);
+    margin-left: 300px;
+    width: 500px;
+    height: 200px;
+}
+.div1:hover{
+    cursor: pointer;
+    transition:all 1s linear;
+    transform:rotateX(360deg);
+}
+.class1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    opacity: 0.2;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 330px;
+    font-size: 150px;
+}
+.div2{
+    color:white;
+    margin-left: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:50px;
+    background-image:linear-gradient(to left, steelblue 35%,black) ;
+    width: 500px;
+    height: 200px;
+}
+.div2:hover{
+    cursor: pointer;
+    transition:all 1s linear;
+    transform:rotateX(360deg);
+}
+.class2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    opacity: 0.2;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 300px;
+    font-size: 150px;
+}
